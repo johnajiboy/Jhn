@@ -28,5 +28,5 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        script: whoami
+        script: 'cd /var/www/html && ./server_deploy.sh'
     
